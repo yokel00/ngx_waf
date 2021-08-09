@@ -1,12 +1,12 @@
-RulePath = "/usr/local/nginx/conf/waf/wafconf/"
+RulePath = "./app/ngx_waf/rules"
 attacklog = "on"
-logdir = "/usr/local/nginx/logs/hack/"
+logdir = "./logs"
 UrlDeny="on"
 Redirect="on"
 CookieMatch="on"
 postMatch="on" 
 whiteModule="on" 
-black_fileExt={"php","jsp"}
+black_fileExt={"php","jsp", "lua"}
 ipWhitelist={"127.0.0.1"}
 ipBlocklist={"1.0.0.1"}
 CCDeny="off"
